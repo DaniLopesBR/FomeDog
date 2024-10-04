@@ -1,0 +1,72 @@
+/* styles-d_g.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FBAF41;
+    color: #2D375B;
+    padding: 20px;
+}
+
+.navbar-custom {
+    background-color: #FBAF41; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar-nav .nav-link h5 {
+    font-family: "Lilita One", sans-serif; /* Aplica a fonte Lilita One */
+    font-weight: 400; /* Define o peso da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    font-size: 24px; /* Define o tamanho da fonte */
+    color: #FBAF41; /* Define a cor do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FBAF41;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px; /* Adicione uma margem inferior para separar o botão do accordion */
+}
+
+.social-icon {
+    color: #646669; /* Altere a cor conforme necessário */
+    padding: 25px;
+}
+
+footer {
+    background-color: #2D375B;
+    color: #FBAF41;
+    text-align: center;
+    padding: 20px;
+}

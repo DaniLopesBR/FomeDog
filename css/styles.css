@@ -1,0 +1,265 @@
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #2D375B;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.lilita-one-regular-s {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #2D375B;
+    text-shadow: 2px 2px 4px #FBAF41;
+
+}
+/* Estilos para o header */
+
+#btn-voltar-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #2D375B;
+    color: #FBAF41;
+    border: 5px solid #FBAF41; /* Bordas de 5px */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+}
+#btn-voltar-topo:hover {
+    background-color: #FBAF41; /* Inversão de cores no hover */
+    color: #2D375B;
+}
+#btn-voltar-topo::before {
+    content: "\25B2"; /* Código Unicode para a seta para cima */
+    font-size: 1.5em;
+}
+header {
+    background-color: #2D375B;
+    color: #FBAF41;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #FBAF41; /* Cor do texto dos links */
+    font-size: 25px; /* Tamanho da fonte */
+}
+
+.navbar-toggler {
+    color: #FBAF41 !important; /* Define a cor do ícone do botão de navegação */
+}
+
+.navbar-toggler:focus .navbar-toggler-icon,
+.navbar-toggler:active .navbar-toggler-icon {
+    color: #FBAF41 !important; /* Garante que a cor do ícone permaneça a mesma quando o botão está ativo */
+}
+
+.navbar-nav .nav-link h5 {
+    font-family: "Lilita One", sans-serif; /* Aplica a fonte Lilita One */
+    font-weight: 400; /* Define o peso da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    font-size: 24px; /* Define o tamanho da fonte */
+    color: #FBAF41; /* Define a cor do texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+/* Adicione outros estilos conforme necessário */
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #FFD700; /* Cor do texto dos links ao passar o mouse */
+}
+
+header h1 {
+    margin: 0;
+    color: #FBAF41;
+}
+.card {
+    height: 100%;
+}
+
+.card-body {
+    height: 100%;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 500px; /* Define a altura máxima das imagens para dispositivos móveis */
+        width: auto; /* Garante que a largura seja ajustada automaticamente para manter a proporção da imagem */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+}
+
+#info {
+    margin-top: 1rem; /* Ajusta a margem superior da seção 'info' */
+}
+
+/* Estilos para desktops */
+@media (min-width: 769px) {
+    .carousel-item img {
+        max-height: 1345px; /* Define a altura máxima das imagens para desktops */
+        width: auto; /* Garante que a largura seja ajustada automaticamente para manter a proporção da imagem */
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    }
+}
+
+.product-card {
+    min-height: 400px; /* Defina a altura mínima desejada para os cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex: 1; /* Isso faz com que o corpo do card ocupe o restante do espaço vertical disponível */
+}
+
+header .navbar-brand,
+header .navbar-nav .nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    color: #333;
+    font-size: 25px;
+}
+
+
+.cl-especial{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: #FBAF41;
+    text-shadow: 2px 2px 4px #2D375B ;
+
+}
+.cl-especial-d{
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    color: #2D375B;
+    text-shadow: 2px 2px 4px #FBAF41 ;
+
+}
+/* Estilos para os cards de produtos */
+.product-card {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #2D375B;
+    color: #FBAF41;
+    text-align: center;
+    padding: 20px;
+}
+
+#logo {
+    max-width: 100px; /* Largura máxima desejada */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para o formulário */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Estilos específicos do site */
+/* Estilos para o carousel */
+#carrossel {
+    background-color: #FBAF41;
+}
+
+#carrossel h1 {
+    color: #ffffff;
+}
+
+/* Estilos para os botões */
+.btn-primary {font-family: 'Lilita one', sans-serif; /* Define a fonte do botão */
+    background-color: #FBAF41; /* Define a cor de fundo do botão */
+    color: #2D375B; /* Define a cor do texto do botão */
+    padding: 10px 20px; /* Define o preenchimento interno do botão */
+    font-size: 16px; /* Define o tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona um leve arredondamento às bordas do botão */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+.social-icon {
+    color: #646669; /* Altere a cor conforme necessário */
+    padding: 25px;
+}
+.btn-outline-primary {
+    background-color: #FBAF41;
+    border-color: #FBAF41;
+    margin-bottom: 5px;
+
+}
+
+.btn-primary:hover {
+    background-color: #2D375B;
+    border-color: #ff9900;
+    color: #FBAF41;
+    
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FomeDOG - Produtos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo_clean_OO1_icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="images/logo-clean.png" alt="Logo da sua empresa" id="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Ícone FontAwesome substituindo o ícone padrão do Bootstrap -->
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link lilita-one-regular" href="index.html">Página Inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lilita-one-regular" href="alimentacao-cachorro.html">AN para Cães</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lilita-one-regular" href="alimentacao-gato.html">AN para Gatos</a>
+                        </li>
+                        <li class="nav-item">
+                            <li class="nav-item">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasContact" aria-controls="offcanvasContact">Contato</button>
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="mt-5">Nossos Produtos</h1>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto1.jpg" class="card-img-top" alt="Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 1</h5>
+                        <p class="card-text">Descrição do Produto 1.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto1Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto2.jpg" class="card-img-top" alt="Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 2</h5>
+                        <p class="card-text">Descrição do Produto 2.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto2Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto3.jpg" class="card-img-top" alt="Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 3</h5>
+                        <p class="card-text">Descrição do Produto 3.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto3Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto4.jpg" class="card-img-top" alt="Produto 4">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 4</h5>
+                        <p class="card-text">Descrição do Produto 4.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto4Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto5.jpg" class="card-img-top" alt="Produto 5">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 5</h5>
+                        <p class="card-text">Descrição do Produto 5.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto5Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/produto6.jpg" class="card-img-top" alt="Produto 6">
+                    <div class="card-body">
+                        <h5 class="card-title lilita-one-regular-s">Produto 6</h5>
+                        <p class="card-text">Descrição do Produto 6.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#produto6Modal">Detalhes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modais para cada produto -->
+    <!-- Produto 1 Modal -->
+    <div class="modal fade" id="produto1Modal" tabindex="-1" aria-labelledby="produto1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="produto1ModalLabel">Produto 1</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Petiscos
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/SEUNUMERODOTELEFONE/?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20petiscos!" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produto 2 Modal -->
+    <div class="modal fade" id="produto2Modal" tabindex="-1" aria-labelledby="produto2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="produto2ModalLabel">Produto 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do Produto 2.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/SEUNUMERODOTELEFONE/?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20refeições%20do%20cardápio%20especial!" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produto 3 Modal -->
+    <div class="modal fade" id="produto3Modal" tabindex="-1" aria-labelledby="produto3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="produto3ModalLabel">Produto 3</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do Produto 3.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/SEUNUMERODOTELEFONE/?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20refeições%20do%20cardápio%20padrão!" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produto 4 Modal -->
+    <div class="modal fade" id="produto4Modal" tabindex="-1" aria-labelledby="produto4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="produto4ModalLabel">Produto 4</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do Produto 4.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/SEUNUMERODOTELEFONE/?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20caldos!" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Produto 5 Modal -->
+    <div class="modal fade" id="produto5Modal" tabindex="-1" aria-labelledby="produto5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="produto5ModalLabel">Produto 5</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Detalhes do Produto 5.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/SEUNUMERODOTELEFONE/?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20refeições%20cruas!" class="btn btn-primary">Enviar Mensagem</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contato" class="mt-4">
+        <div class="container">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasContact" aria-labelledby="offcanvasContactLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasContactLabel">Contato</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Endereço de email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Digite seu email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="reasonInput" class="form-label">Motivo do contato</label>
+                            <textarea class="form-control" id="reasonInput" rows="3" placeholder="Digite o motivo do seu contato"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-3 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Botões simples do Bootstrap para Instagram e WhatsApp -->
+                    <a href="https://www.instagram.com/fome.dog" target="_blank"><i class="fa-brands fa-instagram fa-3x social-icon"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=61986333885" target="_blank"><i class="fa-brands fa-whatsapp fa-3x social-icon"></i></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 FomeDOG. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
